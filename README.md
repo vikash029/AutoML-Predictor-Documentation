@@ -1,48 +1,54 @@
-🚀 AutoML Predictor
-AutoML Predictor is a Python framework that automates data preprocessing, model selection, training, and evaluation for classification and regression problems.
+AutoML Predictor 🚀
+Automated Machine Learning Model Selection & Evaluation
 
-✨ Features
-✅ Detects problem type (classification or regression)
-✅ Preprocesses data (handles missing values, encoding, scaling)
-✅ Tests multiple ML models (Random Forest, SVM, Logistic Regression, etc.)
-✅ Evaluates models using cross-validation
-✅ Selects the best-performing model
+Overview
+AutoML Predictor is a Python-based framework that automatically selects the best machine learning model for a given dataset. It handles data preprocessing, model evaluation, and supports both classification and regression problems.
 
-📂 Project Structure
+Features
+✅ Preprocesses Data (Handles missing values, encoding, scaling)
+✅ Evaluates Multiple ML Models (Random Forest, SVM, Logistic Regression, etc.)
+✅ Uses Cross-Validation for Performance
+✅ Automatically Recommends the Best Model
+
+Project Structure
 bash
 Copy
 Edit
 AutoML-Predictor/
-│── dataset/              # Sample datasets
-│── notebooks/            # Jupyter notebooks
-│── src/                  # Core scripts
-│   ├── data_preprocessing.py
-│   ├── model_selection.py
-│   ├── train_model.py
-│   ├── evaluate_model.py
-│── requirements.txt       # Dependencies
-│── README.md             # Documentation
-│── setup.py              # Packaging (optional)
-🛠 Installation & Setup
+│── dataset/             # Sample datasets  
+│── notebooks/           # Jupyter notebooks for analysis  
+│── src/                 # Main scripts  
+│   ├── data_preprocessing.py  
+│   ├── model_selection.py  
+│   ├── train_model.py  
+│   ├── evaluate_model.py  
+│── requirements.txt      # Python dependencies  
+│── README.md             # Project documentation  
+│── setup.py              # For packaging (optional)  
+Installation
+Run the following command to install dependencies:
+
 bash
 Copy
 Edit
-git clone https://github.com/vikash029/AutoML-Predictor.git
-cd AutoML-Predictor
 pip install -r requirements.txt
-🚀 Usage Guide
+Usage
+1️⃣ Load your dataset:
+
 python
 Copy
 Edit
-import pandas as pd
-from src.model_selection import recommend_model
+import pandas as pd  
+data = pd.read_csv("dataset.csv")  
+2️⃣ Run AutoML Model Selection:
 
-data = pd.read_csv("dataset.csv")
-best_model = recommend_model(data, target_column="label")
-print(f"Best Model: {best_model}")
-📊 Supported ML Models
-✔ Logistic Regression ✔ Decision Tree ✔ Random Forest ✔ SVM ✔ k-NN ✔ XGBoost
+python
+Copy
+Edit
+from src.model_selection import recommend_model  
+best_model = recommend_model(data, target_column="label")  
+print(f"Best Selected Model: {best_model}")  
+Contribute & Support
+🤝 Contributions are welcome! Feel free to open issues and pull requests.
 
-🔥 Future Enhancements
-🚀 Deep Learning (TensorFlow/Keras) 🚀 Hyperparameter Tuning 🚀 API Deployment
-
+📌 GitHub Repository: AutoML-Predictor
