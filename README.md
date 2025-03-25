@@ -2,7 +2,7 @@
 
 AutoML Predictor
 
-AutoML Predictor is a Python framework that automatically selects the best machine learning model for a dataset. It supports both classification and regression problems while handling data preprocessing, model evaluation, and selection.
+AutoML Predictor is a Python library which automatically identifies the optimum machine learning model for a given dataset. It is capable of both classification and regression problems while dealing with data preprocessing, model selection, as well as model evaluation.
 
 🔧 Installation
 
@@ -22,13 +22,13 @@ print(f"Best Selected Model: {best_model}")
 
 ✨ Features
 
-✅ Automatic Model Selection (Classification & Regression)
+Automatic Model Selection (Classification & Regression)
 
-✅ Preprocessing (Handles missing values, encoding, scaling)
+Preprocessing (Handles missing values, encoding, scaling)
 
-✅ Multiple Algorithms (Random Forest, SVM, Logistic Regression, etc.)
+Multiple Algorithms (Random Forest, SVM, Logistic Regression, etc.)
 
-✅ Performance Evaluation using Cross-Validation
+Performance Evaluation using Cross-Validation
 
 
 📂 Folder Structure
@@ -52,10 +52,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 📜 License
 
-This project is open-source and available under the MIT License.
-
-
----
-
-This README is clean, structured, and professional while maintaining a modern and engaging look! Let me know if you need any changes. 🚀
+This project is open-source !!
 
